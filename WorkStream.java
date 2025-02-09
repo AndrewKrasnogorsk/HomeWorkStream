@@ -35,6 +35,7 @@ public class WorkStream {
             
             char startLetter = 'V';
             long result = names.stream().filter(e -> e.startsWith(String.valueOf(startLetter))).count();
+                System.out.println();
                 System.out.println("Строки начинающиеся на букву V : " + result);
         }
 
@@ -42,6 +43,7 @@ public class WorkStream {
             List<Integer> list = Arrays.asList(1, 2, 3, 4, 4, 6, 8, 1, 4, 5, 5, 6, 7, 8); 
             int result = list.stream().distinct().sorted(Comparator.reverseOrder())
                 .limit(2).skip(1).findFirst().get();
+                System.out.println();
                 System.out.println("Второй по величине число: " + result);
         }
     }
